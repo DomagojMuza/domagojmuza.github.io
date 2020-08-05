@@ -104,13 +104,13 @@
 
 
 
-@media only screen and (max-width: 1500px) {
+@media screen and (max-width: 1500px) {
     .skills_list li{
         background-position: -6vh 0.2vh;
         padding-left: 6vh;
     }
 }
-@media only screen and (max-width: 1200px) {
+@media screen and (max-width: 1200px) {
     .skills_list li{
         background-position: -3vh 0.2vh;
         padding-left: 8vh;
@@ -119,18 +119,18 @@
         width: 40vw;
     }
 }
-@media only screen and (max-width: 1020px){
+@media screen and (max-width: 1020px){
     .project_preview, .carousel-size{
         width: 50vw;
     }
 }
-@media only screen and (max-width: 890px) {
+@media screen and (max-width: 890px) {
     .skills_list li{
         background-position: -2vh 0.2vh;
         padding-left: 7vh;
     }
 }
-@media only screen and (max-width: 780px) {
+@media screen and (max-width: 780px) {
     .card .name{
         font-size: 6vh;
     }
@@ -143,7 +143,7 @@
     }
     
 }
-@media only screen and (max-width: 650px){
+@media screen and (max-width: 650px){
     .content{
         grid-template-columns: none;
     }
@@ -165,7 +165,7 @@
         width: 78vw;
     }
 }
-@media only screen and (max-width: 540px){
+@media screen and (max-width: 540px){
     .skills_list li{
         background-position: -9vh 0.2vh;
     }
