@@ -16,14 +16,13 @@
 .name{
     margin-top: 50vh;
     font-weight: 300;
-    /* position: absolute; */
     padding: 5vh;
     width: 80vw;
     margin: auto;
     font-size: 8vh;
     text-align: right;
-    color: white;
-    border-bottom: 1px white solid;
+    color: #f0f0f0;
+    border-bottom: 1px #f0f0f0 solid;
     border-width: 0.5vh;
     padding: 0px;
     cursor: default;
@@ -34,7 +33,7 @@
     margin: auto;
     font-size: 3vh;
     text-align: right;
-    color: white;
+    color: #f0f0f0;
     padding: 0px;
     cursor: default;
 }
@@ -45,8 +44,8 @@
     grid-template-columns: 8fr 2fr;
 }
 .projects{
-    background-image: linear-gradient(rgb(1, 1, 21), black);
-    color: white;
+    background-image: linear-gradient( #f0f0f0,#f0f0f0);
+    color: #364f6b;
 }
 .projects_list{
     width: 80%;
@@ -64,22 +63,25 @@
 }
 .project_description{
     font-size: 3vh;
-    color: whitesmoke;
+    color: #364f6b;
 }
 .project_preview, .carousel-size{
     width: 30vw;
-    height: 38vh;
     float: left;
-    margin: 0 1vh 1vh 0;
+}
+.carousel-border{
+    border: 1vh #364f6b solid;
+    border-radius: 1vh;
+    margin-right: 1vh;
 }
 .skills{
-    color: white;
-    background-image: linear-gradient(rgb(1, 1, 21), black);
+    color: #364f6b;
+    background-image: linear-gradient( #f0f0f0,#f0f0f0);
 }
 .headlines{
     text-align: left;
     font-size: 5vh;
-    border-bottom: 1px white solid;
+    border-bottom: 1px #364f6b solid;
     font-weight: 500;
     width: 80%;
     margin: auto;
@@ -99,7 +101,10 @@
     background-position: -7vh 0.2vh;
     padding-left: 5vh;
 }
-
+.carousel-control-next-icon, .carousel-control-prev-icon{
+    -webkit-filter: invert(100%);
+    filter: invert(100%);
+}
 
 
 
@@ -152,7 +157,6 @@
     }
     .projects{
         order: 1;
-        background-image: linear-gradient(black, black);
     }
     .skills_list{
         font-size: 4vh;
