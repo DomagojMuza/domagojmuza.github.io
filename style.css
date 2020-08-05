@@ -5,19 +5,21 @@
 }
 .header{
     height: 100vh;
-    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-image: url("bg.jpg");
     background-repeat:no-repeat;
     box-shadow:inset 0 0 0 2000px rgba(1, 2, 43, 0.5);
     background-size:100% 100%;
 }
-.card .name{
+.name{
+    margin-top: 50vh;
     font-weight: 300;
-    position: absolute;
+    /* position: absolute; */
     padding: 5vh;
-    top: 43vh;
-    left: 10vw;
     width: 80vw;
+    margin: auto;
     font-size: 8vh;
     text-align: right;
     color: white;
@@ -26,12 +28,10 @@
     padding: 0px;
     cursor: default;
 }
-.card .aboutMe{
-    position: absolute;
+.aboutMe{
     padding: 5vh;
     width: 80vw;
-    top: 55vh;
-    left: 10vw;
+    margin: auto;
     font-size: 3vh;
     text-align: right;
     color: white;
