@@ -147,6 +147,9 @@
     .content{
         grid-template-columns: none;
     }
+    .card .name{
+        font-size: 5vh;
+    }
     .projects{
         order: 1;
         background-image: linear-gradient(black, black);
