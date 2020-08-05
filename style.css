@@ -169,7 +169,11 @@
     .skills_list li{
         background-position: -9vh 0.2vh;
     }
+    .card .name{
+        font-size: 4vh;
+    }
 }
+
 
 [data-scroll]{
     transition: all 2s;
