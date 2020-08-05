@@ -54,7 +54,7 @@
     list-style-type: none;
 }
 .project{
-    /* display: flex; */
+    margin-bottom: 4vh;
 }
 .project_name{
     margin: 0 1vh 1vh 1vh;
