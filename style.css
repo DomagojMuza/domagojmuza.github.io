@@ -1,0 +1,183 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+.header{
+    height: 100vh;
+    position: relative;
+    background-image: url("bg.jpg");
+    background-repeat:no-repeat;
+    box-shadow:inset 0 0 0 2000px rgba(1, 2, 43, 0.5);
+    background-size:100% 100%;
+}
+.card .name{
+    font-weight: 300;
+    position: absolute;
+    padding: 5vh;
+    top: 43vh;
+    left: 10vw;
+    width: 80vw;
+    font-size: 8vh;
+    text-align: right;
+    color: white;
+    border-bottom: 1px white solid;
+    border-width: 0.5vh;
+    padding: 0px;
+    cursor: default;
+}
+.card .aboutMe{
+    position: absolute;
+    padding: 5vh;
+    width: 80vw;
+    top: 55vh;
+    left: 10vw;
+    font-size: 3vh;
+    text-align: right;
+    color: white;
+    padding: 0px;
+    cursor: default;
+}
+.content{
+    height: 100vh;
+    position: relative;
+    display: grid;
+    grid-template-columns: 8fr 2fr;
+}
+.projects{
+    background-image: linear-gradient(rgb(1, 1, 21), black);
+    color: white;
+}
+.projects_list{
+    width: 80%;
+    margin: auto;
+    list-style-type: none;
+}
+.project{
+    /* display: flex; */
+}
+.project_name{
+    margin: 0 1vh 1vh 1vh;
+    font-size: 3vh;
+    color: #fc5185;
+    height: fit-content;
+}
+.project_description{
+    font-size: 3vh;
+    color: whitesmoke;
+}
+.project_preview, .carousel-size{
+    width: 30vw;
+    height: 38vh;
+    float: left;
+    margin: 0 1vh 1vh 0;
+}
+.skills{
+    color: white;
+    background-image: linear-gradient(rgb(1, 1, 21), black);
+}
+.headlines{
+    text-align: left;
+    font-size: 5vh;
+    border-bottom: 1px white solid;
+    font-weight: 500;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 2vh;
+}
+.skills_list{
+    width: 80%;
+    font-size: 3vh;
+    margin: auto;
+    text-align: left;
+    list-style-type: none;
+}
+.skills_list li{
+    padding-bottom: 2vh;
+    background: url(tick.svg) no-repeat left;
+    background-size: 50% 60%;
+    background-position: -7vh 0.2vh;
+    padding-left: 5vh;
+}
+
+
+
+
+
+@media only screen and (max-width: 1500px) {
+    .skills_list li{
+        background-position: -6vh 0.2vh;
+        padding-left: 6vh;
+    }
+}
+@media only screen and (max-width: 1200px) {
+    .skills_list li{
+        background-position: -3vh 0.2vh;
+        padding-left: 8vh;
+    }
+    .project_preview, .carousel-size{
+        width: 40vw;
+    }
+}
+@media only screen and (max-width: 1020px){
+    .project_preview, .carousel-size{
+        width: 50vw;
+    }
+}
+@media only screen and (max-width: 890px) {
+    .skills_list li{
+        background-position: -2vh 0.2vh;
+        padding-left: 7vh;
+    }
+}
+@media only screen and (max-width: 780px) {
+    .card .name{
+        font-size: 6vh;
+    }
+    .skills_list li{
+        background-position: -4vh 0.2vh;
+        padding-left: 6vh;
+    }
+    .content{
+        grid-template-columns: 7fr 3fr;
+    }
+    
+}
+@media only screen and (max-width: 650px){
+    .content{
+        grid-template-columns: none;
+    }
+    .projects{
+        order: 1;
+        background-image: linear-gradient(black, black);
+    }
+    .skills_list{
+        font-size: 4vh;
+    }
+    .skills_list li{
+        background-position: -12vh 0.2vh;
+        padding-left: 11vh;
+    }
+    .project_preview, .carousel-size{
+        width: 78vw;
+    }
+}
+@media only screen and (max-width: 540px){
+    .skills_list li{
+        background-position: -9vh 0.2vh;
+    }
+}
+
+[data-scroll]{
+    transition: all 2s;
+}
+
+/* .content[data-scroll="in"]{
+    transition: all 2s;
+    opacity: 1;
+    transform: translateY(0);
+}
+.content[data-scroll="out"]{
+    transition: all 2s;
+    opacity: 0;
+} */
