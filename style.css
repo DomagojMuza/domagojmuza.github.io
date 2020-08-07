@@ -3,8 +3,20 @@
     padding: 0;
     font-family: 'Roboto', sans-serif;
 }
+.links{
+    display: flex;
+    align-items: center;
+    height: 10vh;
+    background-color: #f0f0f0;
+}
+.github_profile{
+    margin-left: 5vh;
+}
+.github_link{
+    height: 6vh;
+}
 .header{
-    height: 100vh;
+    height: 90vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -74,6 +86,64 @@
     border-radius: 1vh;
     margin-right: 1vh;
 }
+.live_link_body{
+    position: absolute;
+    z-index: 10;
+    left: 0;
+    height: 100%;
+    width: 50%;
+}
+.live_link_body:hover{
+    transition: background-color 0.5s linear;
+    background-color: #fc5185;
+}
+.git_link_body:hover{
+    transition: background-color 0.5s linear;
+    background-color: #f0f0f0;
+}
+.live_link_body:hover > .live_link{
+    visibility: visible;
+    opacity: 1;
+}
+.git_link_body:hover > .git_link{
+    visibility: visible;
+    opacity: 1;
+}
+.live_link, .git_link{
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s linear;
+    width: fit-content;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.git_link a{
+    color: #fc5185;
+}
+.git_link:hover a{
+    color: #fc5185;
+}
+a{
+    transition: all 0.5s;
+    text-decoration: none;
+    color: #f0f0f0;
+    font-size: 3vh;
+}
+a:hover{
+    text-decoration: none;
+    font-size: 4vh;
+    color: #f0f0f0;
+}
+.git_link_body{
+    position: absolute;
+    z-index: 10;
+    right: 0;
+    height: 100%;
+    width: 50%;
+}
+
 .skills{
     color: #364f6b;
     background-image: linear-gradient( #f0f0f0,#f0f0f0);
