@@ -50,7 +50,7 @@
     cursor: default;
 }
 .content{
-    height: 100vh;
+    height: 95vh;
     position: relative;
     display: grid;
     grid-template-columns: 8fr 2fr;
@@ -60,6 +60,7 @@
     color: #364f6b;
 }
 .projects_list{
+    display: grid;
     width: 80%;
     margin: auto;
     list-style-type: none;
@@ -171,11 +172,16 @@ a:hover{
     background-position: -7vh 0.2vh;
     padding-left: 5vh;
 }
-.carousel-control-next-icon, .carousel-control-prev-icon{
+/* .carousel-control-next-icon, .carousel-control-prev-icon{
     -webkit-filter: invert(100%);
     filter: invert(100%);
+} */
+.footer{
+    background-color: #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
 }
-
 
 
 
